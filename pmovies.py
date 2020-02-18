@@ -175,7 +175,7 @@ SELECT * FROM Movie_Director
 	INNER JOIN Movies AS m ON c.mid = m.mid
 	WHERE m.title LIKE '%Star Wars%'
 	GROUP BY a.aid
-	ORDER BY numFilms DESC, a.lname ASC
+	ORDER BY numFilms DESC, a.lname ASC, fname ASC
 
 '''	
 
